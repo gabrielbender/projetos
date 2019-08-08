@@ -1,0 +1,29 @@
+//_projeto
+
+#project-header {
+    margin-bottom: 10px;
+    h1 { display:inline-block; margin-right: 20px; font-size: 40px; }
+    .link-projeto { 
+        display: inline-block; text-decoration: underline; color: $color-link; 
+        &::after { content: ">"; display: inline-block; padding-left:5px; text-decoration: none; }
+        &:hover { color: $color-link-hover; }
+    }
+}
+
+.modulo { 
+    margin-bottom: 50px; line-height: 2;
+
+    img { width: 100%; @include box-shadow(10px 10px 30px rgba(0,0,0,0.2)); }
+    .bloco-texto { margin-bottom: 30px; }
+    figure { margin: 0; }
+}
+.modulo2 p { margin: 0; }
+.modulo3 {
+    figure:nth-child(2){
+        margin-top:80px;
+    }
+}
+.modulo4 { @include largura-total; width: 200vw; }
+
+
+

@@ -1,0 +1,86 @@
+//_mixins
+@mixin transform($property) {
+	-webkit-transform: $property;
+	-ms-transform: $property;
+	transform: $property;
+}
+@mixin transition($property-time...) {
+	-webkit-transition: $property-time;
+	-ms-transition: $property-time;
+	transition: $property-time;
+}
+@mixin border-radius($value: 5px) {
+	-webkit-border-radius: $value;
+	-ms-border-radius: $value;
+	border-radius: $value; 
+}
+@mixin border-radius-diferentes($a, $b, $c, $d) {
+	-webkit-border-radius: $a $b $c $d;
+	-ms-border-radius: $a $b $c $d;
+	border-radius: $a $b $c $d; 
+}
+@mixin box-shadow($value...) {
+	-webkit-box-shadow: $value;
+	-ms-box-shadow: $value;
+	box-shadow: $value;
+}
+@mixin center-xy($positioning: relative) {
+	display: block;
+	position: $positioning;
+	left: 50%;
+	top: 50%;
+	@include transform(translate(-50%,-50%));
+}
+@mixin center-y($positioning: relative) {
+    display: block;
+    position: $positioning;
+    top: 50%;
+    @include transform(translateY(-50%));
+}
+@mixin center-x($positioning: relative) {
+    display: block;
+    position: $positioning;
+    left: 50%;
+    @include transform(translateX(-50%));
+}
+@mixin container-expandido($larg: $largura-container) { //apenas o container expande, o conteúdo se mantem em largura-container
+    padding-left:calc(calc(100% - $larg) / 2);
+    padding-right:calc(calc(100% - $larg) / 2);
+}
+@mixin largura-total { //container e conteúdo são largura da tela
+	width: 100vw;
+	position: relative;
+	left:50%;
+	@include transform(translate(-50%));
+}
+@mixin hide($display: block){
+    display: $display;
+    margin:0;
+    padding:0;
+    height: 0;
+    overflow: hidden;
+    text-indent: -9999em;
+    outline: none;
+    line-height: 0;
+    font-size: 0;
+}
+@mixin image-replacement($display: block) {
+    @include image-replacement($display);
+}
+@mixin css-filters($filtername){
+	-webkit-filter: $filtername;
+	filter: $filtername;
+}
+@mixin object-fit($type: fill){
+	-o-object-fit: $type;
+	-ms-object-fit: $type;
+	-webkit-object-fit: $type;
+	object-fit: $type;
+}
+@mixin clearfix() {
+	&::after {
+	  display: block;
+	  content: "";
+	  clear: both;
+	}
+}

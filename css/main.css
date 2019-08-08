@@ -1,0 +1,333 @@
+body {
+  color: #707070;
+  font-family: "Roboto", "Helvetica", sans-serif;
+}
+
+a {
+  color: #707070;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  list-style: none;
+}
+
+.link {
+  color: #005180;
+  text-decoration: underline;
+}
+
+.link:hover {
+  color: #002337;
+}
+
+@media (max-width: 767.999px) {
+  .intro-secao br {
+    display: none;
+  }
+}
+header {
+  height: 120px;
+}
+header #logo {
+  font-size: 30px;
+  word-spacing: -7px;
+  text-transform: uppercase;
+  font-weight: 300;
+}
+header #logo a {
+  color: #707070;
+  text-decoration: none;
+}
+header #logo a:hover {
+  opacity: 0.8;
+}
+header #logo span:nth-child(1) {
+  color: #859EFF;
+  font-weight: 700;
+}
+header #logo span:nth-child(2) {
+  vertical-align: super;
+  font-size: 0.5em;
+}
+header nav li {
+  float: left;
+  margin-right: 20px;
+}
+header nav li:last-child {
+  margin-right: 0;
+}
+header nav li a {
+  text-transform: uppercase;
+}
+header nav li a:hover {
+  text-decoration: none;
+  color: #303030;
+}
+
+main {
+  padding-bottom: 40px;
+}
+
+.intro-secao {
+  font-size: 25px;
+}
+
+@media (max-width: 767.999px) {
+  #logo {
+    display: table;
+    margin: 15px auto;
+  }
+
+  nav {
+    display: table;
+    margin: 0 auto;
+  }
+}
+@media (min-width: 768px) {
+  header {
+    height: 225px;
+  }
+  header::after {
+    display: block;
+    content: "";
+    clear: both;
+  }
+  header #logo {
+    float: right;
+    display: block;
+    position: relative;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }
+  header nav {
+    float: left;
+    display: block;
+    position: relative;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }
+  header nav ul::after {
+    display: block;
+    content: "";
+    clear: both;
+  }
+  header nav li {
+    margin-right: 69px;
+  }
+
+  .intro-secao {
+    font-size: 40px;
+  }
+}
+#introducao {
+  margin-bottom: 50px;
+}
+
+#projetos {
+  margin-bottom: 50px;
+}
+#projetos h1 {
+  display: block;
+  margin: 0;
+  padding: 0;
+  height: 0;
+  overflow: hidden;
+  text-indent: -9999em;
+  outline: none;
+  line-height: 0;
+  font-size: 0;
+}
+#projetos li {
+  margin-bottom: 20px;
+}
+#projetos a:hover {
+  text-decoration: none;
+  color: #707070;
+}
+#projetos .thumb {
+  height: 257px;
+  width: 100%;
+  background: #666666;
+  overflow: hidden;
+  -webkit-box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.1);
+  -ms-box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.1);
+}
+#projetos .thumb img {
+  width: 102%;
+  display: block;
+  position: relative;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+#projetos a:hover .thumb {
+  -webkit-transform: scale(1.05);
+  -ms-transform: scale(1.05);
+  transform: scale(1.05);
+}
+#projetos .rotulo {
+  margin-left: 10px;
+}
+#projetos .rotulo small {
+  font-size: 12px;
+}
+#projetos .rotulo h2 {
+  font-size: 18px;
+  font-weight: 900;
+}
+
+#contato .informacoes-contato {
+  margin: 35px 0;
+  color: #000;
+  font-size: 20px;
+}
+#contato .informacoes-contato::after {
+  display: block;
+  content: "";
+  clear: both;
+}
+#contato .informacoes-contato a {
+  display: table;
+  color: #000;
+}
+#contato .informacoes-contato a.email {
+  margin-bottom: 30px;
+}
+#contato .informacoes-contato a.redes-linkedin::before {
+  content: "";
+  display: inline-block;
+  width: 23px;
+  height: 23px;
+  margin-right: 10px;
+  margin-bottom: 20px;
+  vertical-align: text-top;
+  background: url("../imgs/icon-linkedin.png") center center no-repeat;
+  background-size: 100% 100%;
+}
+#contato .informacoes-contato a.link {
+  color: #005180;
+}
+#contato .informacoes-contato a.link:hover {
+  color: #002337;
+}
+
+@media (min-width: 768px) {
+  #introducao {
+    margin-bottom: 89px;
+  }
+
+  #projetos {
+    margin-bottom: 135px;
+  }
+  #projetos li {
+    margin-bottom: 20px;
+  }
+  #projetos li:nth-child(odd) {
+    margin-top: 0;
+  }
+  #projetos li:nth-child(even) {
+    margin-top: -128px;
+  }
+  #projetos li:nth-child(1) {
+    margin-top: 69px;
+    margin-bottom: 160px;
+  }
+  #projetos li:nth-child(2) {
+    margin-top: 0;
+  }
+  #projetos .thumb {
+    -webkit-box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.2);
+    -ms-box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.2);
+    box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.2);
+    -webkit-transition: transform 0.5s;
+    -ms-transition: transform 0.5s;
+    transition: transform 0.5s;
+  }
+
+  #contato .informacoes-contato {
+    margin: 50px 0;
+    font-size: 40px;
+  }
+  #contato .informacoes-contato a.redes-linkedin {
+    float: left;
+  }
+  #contato .informacoes-contato a.redes-linkedin::before {
+    width: 40px;
+    height: 40px;
+    margin-top: 3px;
+    margin-right: 15px;
+  }
+  #contato .informacoes-contato a.link {
+    float: right;
+  }
+}
+#project-header {
+  margin-bottom: 10px;
+}
+#project-header h1 {
+  display: inline-block;
+  margin-right: 20px;
+  font-size: 40px;
+}
+#project-header .link-projeto {
+  display: inline-block;
+  text-decoration: underline;
+  color: #005180;
+}
+#project-header .link-projeto::after {
+  content: ">";
+  display: inline-block;
+  padding-left: 5px;
+  text-decoration: none;
+}
+#project-header .link-projeto:hover {
+  color: #002337;
+}
+
+.modulo {
+  margin-bottom: 50px;
+  line-height: 2;
+}
+.modulo img {
+  width: 100%;
+  -webkit-box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.2);
+  -ms-box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.2);
+  box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.2);
+}
+.modulo .bloco-texto {
+  margin-bottom: 30px;
+}
+.modulo figure {
+  margin: 0;
+}
+
+.modulo2 p {
+  margin: 0;
+}
+
+.modulo3 figure:nth-child(2) {
+  margin-top: 80px;
+}
+
+.modulo4 {
+  width: 100vw;
+  position: relative;
+  left: 50%;
+  -webkit-transform: translate(-50%);
+  -ms-transform: translate(-50%);
+  transform: translate(-50%);
+  width: 200vw;
+}
+
+/*# sourceMappingURL=main.css.map */
