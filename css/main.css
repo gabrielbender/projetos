@@ -312,6 +312,10 @@ main {
   margin: 0;
 }
 
+.modulo1 figure {
+  margin-bottom: 50px;
+}
+
 .modulo2 p {
   margin: 0;
 }
