@@ -68,6 +68,15 @@ header nav li a:hover {
   text-decoration: none;
   color: #303030;
 }
+header nav li .download-link::after {
+  content: "";
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  margin-left: 5px;
+  background: url("../imgs/icon-download.png") no-repeat left top;
+  background-size: 100% 100%;
+}
 
 main {
   padding-bottom: 40px;

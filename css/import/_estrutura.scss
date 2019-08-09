@@ -18,6 +18,8 @@ header {
 
             a { text-transform: uppercase; }
             a:hover { text-decoration: none; color: $color-texto-link; }
+
+            .download-link::after { content:""; display: inline-block; width: 15px; height: 15px; margin-left:5px; background: url("../imgs/icon-download.png") no-repeat left top; background-size: 100% 100%; }
         }
     }
 }
