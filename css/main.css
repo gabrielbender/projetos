@@ -334,7 +334,16 @@ main {
 }
 
 .modulo4 {
-  width: 100vw;
+  overflow: hidden;
+  width: calc(100vw - 19px);
+  position: relative;
+  left: 50%;
+  -webkit-transform: translate(-50%);
+  -ms-transform: translate(-50%);
+  transform: translate(-50%);
+}
+.modulo4 figure {
+  width: calc(100vw - 19px);
   position: relative;
   left: 50%;
   -webkit-transform: translate(-50%);

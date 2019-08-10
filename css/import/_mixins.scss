@@ -48,7 +48,7 @@
     padding-right:calc(calc(100% - $larg) / 2);
 }
 @mixin largura-total { //container e conteúdo são largura da tela
-	width: 100vw;
+	width: calc(100vw - 19px);
 	position: relative;
 	left:50%;
 	@include transform(translate(-50%));

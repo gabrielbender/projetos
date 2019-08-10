@@ -28,7 +28,9 @@
         margin-top:80px;
     }
 }
-.modulo4 { @include largura-total; width: 200vw; }
+.modulo4 { overflow: hidden; @include largura-total;
+    figure { @include largura-total; width: 200vw; }
+}
 
 
 
